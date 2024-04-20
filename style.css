@@ -21,7 +21,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 4.5rem 0 4.5rem  ;
+  padding-left: 3.3rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
   background:transparent;
   display: flex;
   justify-content: space-between;
@@ -33,7 +35,8 @@ body {
   font-size: 1.2rem;
   color: var(--primary);
   font-weight: 500;
-  margin-left: 2.5rem;
+  padding: 1.5rem;
+
 }
 
 .logo {
@@ -50,8 +53,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin : 4rem;
-  padding : 2.5rem;
+  padding-top: 6rem;
+  padding-left : 4rem;
+  padding-right : 4rem;
   color: var(--primary);
 }
 #home #main-content {
@@ -65,3 +69,34 @@ body {
   
 }
 
+#pay {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.main {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.paytext {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.payimg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top:1rem ;
+}
+
+
+.payimg img {
+  max-width: 120px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
