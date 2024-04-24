@@ -1,3 +1,7 @@
+/* Setup Font di google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 /* Setup Color Palerte */
 :root {
   --Button: #D2F131;
@@ -7,55 +11,6 @@
   --Background: #f4f4f1;
   --komplemen: #7252D3;
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-left: 3.3rem;
-  padding-right: 4rem;
-  padding-top: 2rem;
-  background:transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.navbar a {
-  font-size: 1.2rem;
-  color: var(--primary);
-  font-weight: 500;
-  padding: 1.5rem;
-
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 5rem;
-} */
-
-/* Setup Font di google font */
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 /* ini default semuanya biar netral setinggannya */
 *{
