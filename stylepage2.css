@@ -12,8 +12,9 @@
     text-decoration: none;
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
+    background-color: var(--Background);
 }
-/* Setup Color Palerte */
+/* Setup Color Palette */
 
 :root {
     --Button: #D2F131;
@@ -30,10 +31,11 @@ img {
 
 body {
     color: var(--Base) ;
+    min-height: 100vh;
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     width: 100%;
@@ -52,16 +54,22 @@ header {
     gap: 4rem;
 }
 
+
+
 header ul {
     display: flex;
     gap: 2rem;
 }
 
+main {
+    
+}
 
 .container-navbar-logo a {
     font-size: 24px;
     color: var(--Base);
 }
+
 
 .button {
     border: 3px solid var(--Base);
@@ -77,13 +85,93 @@ header ul {
     background-color: var(--Button);
     border-radius: 15px;
     box-shadow: 4px 4px 0px 0px var(--Base);
+    transition: all 100ms ease-out;
 }
 
 
 .button:active {
-    border: 3px solid var(--Button);
+    font-size: 22px;
+    border: 2px solid var(--Base);
     padding: 3px 10px 3px;
     background-color: var(--Button);
     border-radius: 15px;
-    box-shadow: 4px 4px 0px 0px var(--Base);
+    box-shadow: 1px 1px 0px 0px var(--Base);
+    transition: all 100ms ease-out;
+}
+
+.donate-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0rem 3rem 0rem ;
+    gap: 3rem;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    background-color: var(--Button);
+    max-width: 34rem;
+}
+#donate {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    gap: 16px;
+    width: 100vh;
+}
+.card {
+    border: 2px solid var(--Base);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 4px 0px 6px var(--Base);
+    background-color: white;
+    
+}
+
+p {
+    background: transparent;
+}
+
+.card img {
+    width: 24rem;
+    border-radius: 20px;
+    border: 4px solid var(--Base);
+    box-shadow: 3px 3px 0px 0px var(--Base);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu .pilihan {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    justify-content: left;
+    gap: 20px;
+}
+
+
+.menu .pilihan li a {
+    display: flex;
+    background-color: transparent;
+    color: var(--Base);
+    font-size: 24px;
+    
+    
+}
+
+.pilihan .button:active {
+    font-size: 22px;
+    border: 2px solid var(--Base);
+    padding: 3px 10px 3px;
+    background-color: var(--Button);
+    border-radius: 15px;
+    box-shadow: 1px 1px 0px 0px var(--Base);
+    transition: all 100ms ease-out;
 }
