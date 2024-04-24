@@ -1,9 +1,14 @@
-:root { 
-  --primary:#053B50;
-  --bg:white;
+/* Setup Color Palerte */
+:root {
+  --Button: #D2F131;
+  /* untuk font dan garus tepi kyk border */
+  --Base: #242924;
+  --komplemen-2: #ED71a9;
+  --Background: #f4f4f1;
+  --komplemen: #7252D3;
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,6 +51,89 @@ body {
 
 .logo img {
   width: 5rem;
+} */
+
+/* Setup Font di google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* ini default semuanya biar netral setinggannya */
+*{
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--Base) ;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    background: var(--Background);
+    box-shadow: var(--Base);
+    padding: 3rem 4rem 2rem;
+    
+}
+
+.container-navbar-logo {
+    flex-direction: row;
+    display: flex;
+    gap: 4rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.container-navbar-logo a {
+    font-size: 24px;
+    color: var(--Base);
+}
+
+.button {
+    border: 3px solid var(--Base);
+    padding: 3px 10px 3px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px 0px var(--Base);
+
+}
+
+.button:hover {
+    border: 3px solid var(--Base);
+    padding: 3px 10px 3px;
+    background-color: var(--Button);
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px 0px var(--Base);
+}
+
+
+.button:active {
+    border: 3px solid var(--Button);
+    padding: 3px 10px 3px;
+    background-color: var(--Button);
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px 0px var(--Base);
 }
 
 
@@ -105,4 +193,81 @@ body {
   max-width: 120px;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.scroll-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 600px;
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: #242924;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem #242924;
+  color: #f4f4f1;
+}
+
+.scroller {
+  max-width: 600px;
+  /* outline: 3px solid lime; */
+}
+
+.scroller_inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroll-img img {
+  max-width: 70px;
+  border-radius: 5%;
+}
+
+.mid-img img {
+  max-width: 100px;
+  border-radius: 5%;
+}
+
+.scroller[data-animated = "true"]{
+  overflow: hidden;
+  -webkit-mask: 
+    linear-gradient(90deg,transparent,white 20%,white 80%,transparent);
+  mask: linear-gradient(90deg,transparent,white 20%,white 80%,transparent);
+}
+
+.scroller[data-animated = "true"]  .scroller_inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration,40s) var(--_animation-direction,forwards)  linear infinite;
+}
+
+.scroller[data-direction = "right"] {
+  --_animation-direction: reverse;
+}
+.scroller[data-direction = "left"] {
+  --_animation-direction: forwards;
+}
+.scroller[data-speed = "fast"] {
+  --_animation-duration: 120s;
+}
+.scroller[data-speed = "slow"] {
+  --_animation-duration: 40s;
+}
+
+@keyframes scroll {
+  to{
+    transform: translate(calc(-50% - 0.5rem));
+  }
 }
