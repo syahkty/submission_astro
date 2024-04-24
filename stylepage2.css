@@ -42,7 +42,7 @@ header {
     justify-content: space-between;
     background: var(--Background);
     box-shadow: var(--Base);
-    padding: 3em 7em 3em;
+    padding: 3rem 7rem 3rem;
     
 }
 
