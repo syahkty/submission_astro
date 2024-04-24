@@ -1,116 +1,105 @@
 /* Setup Font di google font */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 /* Setup Color Palerte */
 :root {
-  --Button: #D2F131;
+  --Button: #d2f131;
   /* untuk font dan garus tepi kyk border */
   --Base: #242924;
-  --komplemen-2: #ED71a9;
+  --komplemen-2: #ed71a9;
   --Background: #f4f4f1;
-  --komplemen: #7252D3;
+  --komplemen: #7252d3;
 }
 
 /* ini default semuanya biar netral setinggannya */
-*{
-    font-family: "Manrope", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-padding-top: 2rem;
-    scroll-behavior: smooth;
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    color: var(--Base) ;
+  color: var(--Base);
 }
 
 header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-between ;
-    background: var(--Background);
-    box-shadow: var(--Base);
-    padding: 3rem 4rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--Background);
+  box-shadow: var(--Base);
+  padding: 3rem 4rem 2rem;
 }
 
-#home span{
+#home span {
   font-weight: 800;
 }
 
 .container-navbar-logo {
-    flex-direction: row;
-    display: flex;
-    gap: 4rem;
+  flex-direction: row;
+  display: flex;
+  gap: 4rem;
 }
 
 header ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-
 .container-navbar-logo a {
-    font-size: 24px;
-    color: var(--Base);
+  font-size: 24px;
+  color: var(--Base);
 }
 
 .button {
-    border: 3px solid var(--Base);
-    padding: 3px 10px 3px;
-    border-radius: 15px;
-    box-shadow: 4px 4px 0px 0px var(--Base);
-
+  border: 3px solid var(--Base);
+  padding: 3px 10px 3px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px 0px var(--Base);
 }
 
 .button:hover {
-    border: 3px solid var(--Base);
-    padding: 3px 10px 3px;
-    background-color: var(--Button);
-    border-radius: 15px;
-    box-shadow: 4px 4px 0px 0px var(--Base);
+  background-color: var(--Button);
 }
-
 
 .button:active {
-    border: 3px solid var(--Button);
-    padding: 3px 10px 3px;
-    background-color: var(--Button);
-    border-radius: 15px;
-    box-shadow: 4px 4px 0px 0px var(--Base);
+  background-color: var(--Button);
 }
-
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 6rem;
-  padding-left : 4rem;
-  padding-right : 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   color: var(--primary);
 }
 #home #main-content {
   margin-right: 8rem;
 }
+
 #home #main-content h1 {
   font-size: 50px;
 }
-.gambar img{
+
+.gambar img {
   width: 26rem;
-  
 }
 
 /* pay section css */
@@ -143,7 +132,7 @@ header ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top:1rem ;
+  margin-top: 1rem;
   height: 10rem;
 }
 
@@ -155,11 +144,11 @@ header ul {
   box-shadow: 4px 4px 0px 0px var(--Base);
 }
 
-.payimg img:hover{
+.payimg img:hover {
   background-color: var(--Button);
   max-width: 150px;
   transition: all 100ms ease-out;
-} 
+}
 
 /* scroll section css */
 
@@ -168,7 +157,7 @@ header ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#ffffff;
+  background-color: #ffffff;
   height: 600px;
 }
 
@@ -190,7 +179,7 @@ header ul {
   max-width: 600px;
 }
 
-.scroll-img .creatorText{
+.scroll-img .creatorText {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -215,34 +204,83 @@ header ul {
   border-radius: 5%;
 }
 
-.scroller[data-animated = "true"]{
+.scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: 
-    linear-gradient(90deg,transparent,white 20%,white 80%,transparent);
-  mask: linear-gradient(90deg,transparent,white 20%,white 80%,transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.scroller[data-animated = "true"]  .scroller_inner {
+.scroller[data-animated="true"] .scroller_inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration,40s) var(--_animation-direction,forwards)  linear infinite;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
-.scroller[data-direction = "right"] {
+.scroller[data-direction="right"] {
   --_animation-direction: reverse;
 }
-.scroller[data-direction = "left"] {
+.scroller[data-direction="left"] {
   --_animation-direction: forwards;
 }
-.scroller[data-speed = "fast"] {
+.scroller[data-speed="fast"] {
   --_animation-duration: 120s;
 }
-.scroller[data-speed = "slow"] {
+.scroller[data-speed="slow"] {
   --_animation-duration: 40s;
 }
 
 @keyframes scroll {
-  to{
+  to {
     transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #home .gambar img {
+    display: none;
+  }
+
+  .scroller {
+    max-width: 360px;
+  }
+
+  #home #main-content h1 {
+    font-size: 35px;
+  }
+
+  #home #main-content p {
+    font-size: 13px;
+  }
+
+  .container-navbar-logo a {
+    padding: 1px 3px 1px;
+    font-size: 18px;
+  }
+
+  header {
+    padding: 1rem 3rem 1rem;
+  }
+
+  .container {
+    padding-top: 5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  #pay {
+    height: 450px;
+    width: 100%;
+  }
+
+  .scroller {
+    max-width: 360px;
   }
 }
