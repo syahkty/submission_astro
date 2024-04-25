@@ -167,6 +167,33 @@ header ul {
   list-style: none;
 }
 
+.card-creator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 3px solid var(--Base);
+  box-shadow: 4px 4px 0px 0px var(--Base);
+  background-color: var(--komplemen-2);
+}
+.card-creator img {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.ungu {
+  background-color: var(--komplemen);
+}
+
+.kuning {
+  background-color: var(--Button);
+}
+
+.card-creator p {
+  padding-right: 5px;
+}
+
 .tag-list li {
   padding: 1rem;
   background: #242924;
@@ -194,9 +221,7 @@ header ul {
 
 .scroll-img img {
   max-width: 70px;
-  border-radius: 5%;
-  border: 3px solid var(--Base);
-  box-shadow: 4px 4px 0px 0px var(--Base);
+
 }
 
 .mid-img img {
