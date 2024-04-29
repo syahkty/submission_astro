@@ -175,7 +175,7 @@ header ul {
   border: 3px solid var(--Base);
   box-shadow: 4px 4px 0px 0px var(--Base);
   background-color: var(--komplemen-2);
-  max-width: 200px;
+  width: 200px;
 }
 .card-creator img {
   margin: 5px;
@@ -281,10 +281,6 @@ header ul {
     font-size: 10px;
   }
 
-  #main-content {
-    padding-left: ;
-  }
-
   .scroller {
     max-width: 560px;
   }
@@ -336,6 +332,9 @@ header ul {
     font-weight: 800;
     font-size: 14px;
   }
+  .card-creator {
+    max-width: 170px;
+  }
 }
 
 @media screen and (max-width: 367px) {
@@ -347,4 +346,6 @@ header ul {
   .scroller {
     max-width: 360px;
   }
+
+
 }
