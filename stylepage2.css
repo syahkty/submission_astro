@@ -123,7 +123,7 @@ main {
     background: transparent;
     gap: 20px;
     width: 100vh;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 .card {
     border: 2px solid var(--Base);
@@ -163,24 +163,35 @@ p {
     padding-bottom: 2rem;
 }
 
-.menu .pilihan li a {
-    display: flex;
-    background-color: transparent;
-    color: var(--Base);
+.TombolMenu {
     font-size: 24px;
-    
-    
+    border: 3px solid var(--Base);
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px var(--Base);
+    color: var(--Base);
+
 }
 
-.pilihan .button:active {
-    font-size: 22px;
-    border: 2px solid var(--Base);
-    padding: 3px 10px 3px;
+.TombolMenu:hover {
+    font-size: 24px;
+    border: 3px solid var(--Base);
+    padding: 3px 10px 3px 10px;
     background-color: var(--Button);
-    border-radius: 15px;
-    box-shadow: 1px 1px 0px 0px var(--Base);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px var(--Base);
     transition: all 100ms ease-out;
 }
+
+.TombolTekan {
+    font-size: 24px;
+    border: 3px solid var(--Base);
+    padding: 3px 10px 3px 10px;
+    background-color: var(--Button);
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px 0px var(--Base);
+}
+
 
 .masukan {
     width: 100%;
@@ -238,3 +249,13 @@ p {
     font-weight: bold;
     line-height: 1.1;
 }
+
+#Support {
+    width: 100%;
+}
+
+#mediaShare {
+    display: none;
+    width: 100%;
+}
+

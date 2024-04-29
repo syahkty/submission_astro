@@ -36,13 +36,13 @@
                 </div>
             </div>
             <div id="donate" class="card">
-                <form>
-                    <div id="jumlah" class="menu">
-                        <ul class="pilihan">
-                            <li class="button"><a href="">Support</a></li>
-                            <li class="button"><a href="">Media Share</a></li>
-                        </ul>
-                    </div>
+                <div class="menu">
+                    <ul class="pilihan">
+                        <li id="Sp"><button class="TombolMenu" >Support</button></li>
+                        <li  id="Md"><button class="TombolMenu" >Media Share</button></li>
+                    </ul>
+                </div>
+                <form id="Support" class="input-group" style="display :block">
                     <div class="masukan">
                         <label for="nominal" class="input-table">Masukan Nominal</label>
                         <input type="text" name="nominal" id="Nominal" class="input-field" placeholder="Nominal Contoh: 20.000" required>  
@@ -57,7 +57,32 @@
                         <input type="text" name="pesan" id="Pesan" class="input-field" placeholder="Pesan" required>
                     </div>
 
-                    <!-- radio box check verivikasi -->
+                    <!-- check verivikasi -->
+                    <div class="cek">
+                        <div class="ceklist">
+                            <input  type="checkbox" name="purple" value="yes" class="Syarat" required> * dengan ini saya menyetujui menggelontorkan uang secara ikhlas kepada sang konten creator<br>
+                        </div>
+                        <div class="ceklist">
+                            <input type="checkbox" name="purple" value="yes" class="Syarat" required> * Saya Berumur lebih dari 18 tahun<br>
+                        </div>
+                    </div>
+                </form>
+                <form id="mediaShare" class="input-group" style="display :none">
+                    <div class="masukan">
+                        <label for="nominal" class="input-table">Masukan Pintar</label>
+                        <input type="text" name="nominal" id="Nominal" class="input-field" placeholder="Nominal Contoh: 20.000" required>  
+                        <p>Minimal 30$</p>
+                    </div>
+                    <div class="masukan">
+                        <label for="dari" class="input-table">Dari: </label>
+                        <input type="text" name="dari" id="Dari" class="input-field" placeholder="Manusia Biasa" required>
+                    </div>
+                    <div class="masukan">
+                        <label for="pesan" class="input-table">Pesan* anda:</label>
+                        <input type="text" name="pesan" id="Pesan" class="input-field" placeholder="Pesan" required>
+                    </div>
+
+                    <!-- check verivikasi -->
                     <div class="cek">
                         <div class="ceklist">
                             <input  type="checkbox" name="purple" value="yes" class="Syarat" required> * dengan ini saya menyetujui menggelontorkan uang secara ikhlas kepada sang konten creator<br>
@@ -70,11 +95,13 @@
             </div>
         </div>
         <div class="Bayar">
-            <button class="TombolBayar">Bayar</button>
+            <button form="Support" class="TombolBayar">Bayar</button>
         </div>
     </main>
     <footer>
 
     </footer>
+
+    <script src="scripthal2.js"></script>
 </body>
 </html>
