@@ -17,7 +17,7 @@
             <a href="" class="logo"><i class='bx bx-coin'></i>Creatip</a>
             <!-- Tombol-tombolnya -->
             <ul class="navbar">
-                <li><a href="#Home" class="button">Home</a></li>
+                <li><a href="index.html" class="button">Home</a></li>
                 <li><a href="#About" class="button">About</a></li>
             </ul>
         </div>
@@ -69,7 +69,7 @@
                 </form>
                 <form id="mediaShare" class="input-group" style="display :none">
                     <div class="masukan">
-                        <label for="nominal" class="input-table">Masukan Pintar</label>
+                        <label for="nominal" class="input-table">Masukan Nominal</label>
                         <input type="text" name="nominal" id="Nominal" class="input-field" placeholder="Nominal Contoh: 20.000" required>  
                         <p>Minimal 30$</p>
                     </div>
@@ -80,6 +80,11 @@
                     <div class="masukan">
                         <label for="pesan" class="input-table">Pesan* anda:</label>
                         <input type="text" name="pesan" id="Pesan" class="input-field" placeholder="Pesan" required>
+                    </div>
+                    <div id="yt" class="masukan">
+                        <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" frameborder="0" width="60%" height="315"></iframe>
+                        <label for="link" class="input-table">Link: </label>
+                        <input type="text" name="link" id="link" class="input-field" placeholder="yt url" required>
                     </div>
 
                     <!-- check verivikasi -->
@@ -95,7 +100,7 @@
             </div>
         </div>
         <div class="Bayar">
-            <button form="Support" class="TombolBayar">Bayar</button>
+            <button form="Support" id="submit" class="TombolBayar">Bayar</button>
         </div>
     </main>
     <footer>

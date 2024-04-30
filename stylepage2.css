@@ -45,7 +45,7 @@ header {
     background: var(--Background);
     box-shadow: var(--Base);
     padding: 3rem 7rem 3rem;
-    
+    border-bottom: 1px solid var(--Base);
 }
 
 .container-navbar-logo {
@@ -116,6 +116,7 @@ main {
     align-items: center;
     background-color: var(--Button);
     max-width: 34rem;
+    font-size: 20px;
 }
 #donate {
     display: flex;
@@ -259,3 +260,18 @@ p {
     width: 100%;
 }
 
+#yt {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+#yt iframe{
+    border: 2px solid var(--Base);
+    box-shadow: 3px 3px 0px 0px var(--Base);
+    border-radius: 10px;
+}
+
+#yt input{
+    width: 40%;
+}

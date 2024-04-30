@@ -10,6 +10,8 @@
   --komplemen-2: #ed71a9;
   --Background: #f4f4f1;
   --komplemen: #7252d3;
+  --komplemen-3: #9ae7ff;
+
 }
 
 /* ini default semuanya biar netral setinggannya */
@@ -33,7 +35,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   width: 100%;
@@ -43,7 +45,9 @@ header {
   background: var(--Background);
   box-shadow: var(--Base);
   padding: 3rem 4rem 2rem;
+  border-bottom: 1px solid var(--Base);
 }
+
 
 #home span {
   font-weight: 800;
@@ -85,9 +89,9 @@ header ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 6rem;
-  padding-inline: 4rem;
-  color: var(--primary);
+  padding: 6rem 10rem 6rem 10rem ;
+  color: var(--Base);
+  background-color: var(--Background);
 }
 #home #main-content {
   margin-right: 8rem;
@@ -97,8 +101,16 @@ header ul {
   font-size: 50px;
 }
 
+.gambar {
+  border: 6px solid var(--Base);
+  box-shadow: 4px 4px 0px 0px var(--Base);
+  border-radius: 20px;
+}
+
 .gambar img {
   width: 26rem;
+  border-radius: 20px;
+
 }
 
 /* pay section css */
@@ -156,7 +168,7 @@ header ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--Background);
   height: 600px;
 }
 
@@ -211,6 +223,7 @@ header ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-bottom: 2rem ;
 }
 
 .scroller_inner {
@@ -269,8 +282,14 @@ header ul {
 }
 
 @media screen and (max-width: 750px){
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+
   .gambar img {
-    width: 15rem;
+    width: 12rem;
   }
 
     #home #main-content h1 {
@@ -313,8 +332,7 @@ header ul {
   }
 
   .container {
-    padding-top: 5rem;
-    margin-bottom: 30px;
+    padding: 5rem;
   }
 
   .scroll-img img {
