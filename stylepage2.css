@@ -44,16 +44,16 @@ header {
     justify-content: space-between;
     background: var(--Background);
     box-shadow: var(--Base);
-    padding: 3rem 7rem 3rem;
+    padding: 3rem 4rem 2rem;
     border-bottom: 1px solid var(--Base);
-}
+    z-index: 100;
+  }
 
 .container-navbar-logo {
     flex-direction: row;
     display: flex;
     gap: 4rem;
 }
-
 
 
 header ul {
@@ -123,7 +123,7 @@ main {
     flex-direction: column;
     background: transparent;
     gap: 20px;
-    width: 100vh;
+    max-width: 34rem;
     padding-bottom: 1em;
 }
 .card {
@@ -225,7 +225,7 @@ p {
     padding: 4px 10px 4px;
     border-radius: 15px;
     box-shadow: 4px 4px 0px 0px var(--Base);
-    width: 70em;
+    width:72rem;
     color: white;
     
 }
@@ -274,4 +274,31 @@ p {
 
 #yt input{
     width: 40%;
+}
+
+@media screen and (max-width: 555px){
+
+#donate{
+    max-width: 25rem;
+    max-height: 40rem; 
+    font-size:20px;
+}
+
+#profile {
+    max-width: 25rem;
+    max-height: 40rem;
+}
+
+.container-navbar-logo a {
+    padding: 1px 3px 1px;
+    font-size: 18px;
+  }
+
+  header {
+    padding: 1rem 3rem 1rem;
+  }
+
+  .TombolBayar {
+    max-width: 25rem;
+  }
 }
