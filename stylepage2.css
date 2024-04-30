@@ -106,7 +106,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin: 3rem 0rem 3rem 0rem ;
-    gap: 3rem;
+    gap: 5vw;
 }
 
 #profile {
@@ -115,7 +115,7 @@ main {
     gap: 24px;
     align-items: center;
     background-color: var(--Button);
-    max-width: 34rem;
+    width: 32.5vw;
     font-size: 20px;
 }
 #donate {
@@ -123,7 +123,7 @@ main {
     flex-direction: column;
     background: transparent;
     gap: 20px;
-    max-width: 34rem;
+    max-width: 62.5vw;
     padding-bottom: 1em;
 }
 .card {
@@ -225,7 +225,7 @@ p {
     padding: 4px 10px 4px;
     border-radius: 15px;
     box-shadow: 4px 4px 0px 0px var(--Base);
-    width:72rem;
+    width: 80vw;
     color: white;
     
 }
