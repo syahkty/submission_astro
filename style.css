@@ -169,8 +169,46 @@ header ul {
 /* Profile pendiri */
 
 .Pendiri-wrapper {
+  display: flex;
+  flex-direction: row;
   height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
 }
+
+.orang-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 50vh;
+  border: 3px solid var(--Base);
+  padding: 3px 10px 3px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px 0px var(--Base);
+}
+
+.profile-card {
+
+  border: 3px solid var(--Base);
+  padding: 3px 10px 3px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px 0px var(--Base);
+  flex: 1;
+}
+.keterangan-profile{
+  border: 3px solid var(--komplemen);
+  padding: 3px 10px 3px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px 0px var(--Base);
+
+  flex: 2;
+}
+
+.profile-card #sakti {
+
+}
+
 
 /* scroll section css */
 
