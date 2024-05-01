@@ -166,6 +166,12 @@ header ul {
   transition: all 100ms ease-out;
 }
 
+/* Profile pendiri */
+
+.Pendiri-wrapper {
+  height: 100vh;
+}
+
 /* scroll section css */
 
 .scroll-img {

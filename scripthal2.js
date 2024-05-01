@@ -23,3 +23,14 @@ tmblMd.addEventListener('click', function() {
   mdForm.style.display = 'block';
 });
 
+const tmblSbmt = document.getElementById('submit');
+
+tmblSbmt.addEventListener('click', function() {
+  if (spForm.style.display === 'none') {
+    tmblSbmt.setAttribute('form', 'mediaShare');
+  }
+  else {
+    tmblSbmt.setAttribute('form','Support');
+
+  }
+});
