@@ -273,6 +273,10 @@ p {
     flex-direction: column;
   }
 
+  .frame {
+    width: 90%;
+  }
+
   #donate {
     max-width: 25rem;
     font-size: 20px;
