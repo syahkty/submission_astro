@@ -1,16 +1,13 @@
-// Ambil referensi ke gambar keempat
-var yangDiDonate = document.getElementById("yangdidonate");
+var gambarColab = document.querySelectorAll(".gambarColab");
+var yangdidonate = document.getElementById("yangdidonate");
 
-// Ambil semua elemen dengan kelas 'gambar'
-var gambarList = document.querySelectorAll('gambarColab');
-// Tambahkan event listener ke setiap elemen
-gambarList.forEach(function(gambar) {
-  gambar.addEventListener("click", function() {
-    gantiGambar(gambar.src);
-  });
-});
+for (var i = 0; i < gambarColab.length; i++) {
+    gambarColab[i].addEventListener("click", function() {
+        sessionStorage.setItem('gambar', this.src);
+    });
+}
 
-// Fungsi untuk mengganti gambar keempat
-function gantiGambar(src) {
-  yangDiDonatet.src = src;
+var gambarSrc = sessionStorage.getItem('gambar');
+if (gambarSrc) {
+    yangdidonate.src = gambarSrc;
 }

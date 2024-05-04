@@ -139,6 +139,7 @@ p {
   border-radius: 20px;
   border: 4px solid var(--Base);
   box-shadow: 3px 3px 0px 0px var(--Base);
+  width: 20vw;
 }
 
 .menu {

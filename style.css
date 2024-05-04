@@ -175,32 +175,30 @@ header ul {
   padding-left: 10%;
   padding-right: 10%;
   align-items: center;
+  gap: 4rem;
+  background-color: var(--Background);
 }
 
-.orang-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  height: 50vh;
-  border: 3px solid var(--Base);
-  padding: 3px 10px 3px;
-  border-radius: 15px;
-  box-shadow: 4px 4px 0px 0px var(--Base);
-}
 
 .profile-card {
-
+  display: flex;
   border: 3px solid var(--Base);
   padding: 3px 10px 3px;
   border-radius: 15px;
   box-shadow: 4px 4px 0px 0px var(--Base);
   flex: 1;
+  padding: 1rem 2rem 4rem 2rem;
+  align-items: center;
+  justify-content: center;
 }
+
+.profile-card img {
+  width: 20rem;
+  border-radius: 10px;
+  border: 2px solid var(--Base);
+}
+
 .keterangan-profile{
-  border: 3px solid var(--komplemen);
-  padding: 3px 10px 3px;
-  border-radius: 15px;
-  box-shadow: 4px 4px 0px 0px var(--Base);
   flex: 2;
 }
 
@@ -219,6 +217,8 @@ header ul {
   background-color: var(--Background);
   height: 600px;
 }
+
+
 
 .tag-list {
   margin: 0;
