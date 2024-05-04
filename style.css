@@ -177,6 +177,7 @@ header ul {
   align-items: center;
   gap: 4rem;
   background-color: var(--Background);
+  justify-content: space-evenly;
 }
 
 
@@ -190,7 +191,9 @@ header ul {
   padding: 1rem 2rem 4rem 2rem;
   align-items: center;
   justify-content: center;
+  max-width: 30rem;
 }
+
 
 .profile-card img {
   width: 20rem;

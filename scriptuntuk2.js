@@ -11,3 +11,4 @@ var gambarSrc = sessionStorage.getItem('gambar');
 if (gambarSrc) {
     yangdidonate.src = gambarSrc;
 }
+
