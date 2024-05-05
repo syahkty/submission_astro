@@ -24,6 +24,7 @@
   text-decoration: none;
   scroll-padding-top: 2rem;
   scroll-behavior: smooth;
+
 }
 
 img {
@@ -105,6 +106,9 @@ header ul {
 #home #main-content h1 {
   font-size: 50px;
 }
+#home #main-content p {
+  max-width: 60rem;
+}
 
 .gambar {
   border: 6px solid var(--Base);
@@ -167,17 +171,33 @@ header ul {
 }
 
 /* Profile pendiri */
+.viewabout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Background);
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  background-color: var(--Background);
+}
 
 .Pendiri-wrapper {
+  padding-top: 3rem;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   padding-left: 10%;
   padding-right: 10%;
   align-items: center;
   gap: 4rem;
   background-color: var(--Background);
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 
@@ -435,6 +455,11 @@ ul{
     width: 50%;
     margin-bottom: 30px;
 }
+
+.keterangan-profile {
+  display: none;
+}
+
 }
 
 @media screen and (max-width: 555px) {
